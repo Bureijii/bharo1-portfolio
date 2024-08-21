@@ -37,9 +37,10 @@ h2{
     border-radius:10px;
 }
 
-.content-1, .content-2, .footer{
+.content-1, .content-2, .content-3, .footer{
     display:flex;
     justify-content:center;
+    gap:50px;
 }
 
 .projects-emelia{
@@ -58,11 +59,27 @@ h2{
     transition:ease-in-out 2s;
 }
 
-.projects-emelia p, .projects-tattoo p, .projects-hnanimations p, .projects-orange p{
+.projects-emelia p, .projects-tattoo p, .projects-hnanimations p, .projects-orange p, .projects-guide p{
     width:500px;
     height:300px;
     cursor:pointer;
     opacity:0;
+}
+
+a:visited{
+    color:black;
+}
+
+a:hover{
+    color:#804949;
+}
+
+a:active{
+    color:#804949;
+}
+
+a.lastclicked{
+    color:#804949;
 }
 
 .projects-tattoo{
@@ -113,7 +130,39 @@ h2{
     transition:ease-in-out 2s;
 }
 
-.projects-emelia:hover, .projects-tattoo:hover, .projects-hnanimations:hover, .projects-orange:hover{
+.projects-guide{
+    margin:100px 20px 20px 20px;
+    font-family:'Kiwi Maru';
+    font-size:20px;
+    background-color:white;
+    border: 1px solid #8E7798;
+    height:300px;
+    width:500px;
+    border-radius:15px;
+    box-shadow: 12px 12px 2px 1px #E4DDED;
+    background:url(guide.png);
+    background-size:cover;
+    background-position:top;
+    transition:ease-in-out 4.5s;
+}
+
+.projects-blank{
+    margin:100px 20px 20px 20px;
+    font-family:'Kiwi Maru';
+    font-size:20px;
+    /*background-color:white;
+    border: 1px solid #8E7798;*/
+    height:300px;
+    width:500px;
+    /*border-radius:15px;
+    box-shadow: 12px 12px 2px 1px #E4DDED;
+    background:url();
+    background-size:cover;
+    background-position:top;
+    transition:ease-in-out 4.5s;*/
+}
+
+.projects-emelia:hover, .projects-tattoo:hover, .projects-hnanimations:hover, .projects-orange:hover, .projects-guide:hover{
     background-position:bottom;
 }
 
@@ -143,10 +192,10 @@ figcaption{
     }
 }
 
-
 .footer div{
     height:100px;
     width:500px;
+    margin-top:50px;
 }
 
 .second-nav{
@@ -163,10 +212,9 @@ figcaption{
 }
 
 @media (max-width: 1030px) {
-    .content-1, .content-2 {
+    .content-1, .content-2, .content-3 {
         align-items:center;
         flex-direction: column;
-  
     }
 
     .navbar{
@@ -176,15 +224,14 @@ figcaption{
     .second-nav{
         display:block;
     }
-
 }
 
 @media (max-width: 500px) {
-    .content-1, .content-2 {
+    .content-1, .content-2, .content-3 {
       flex-direction: column;
     }
 
-    .projects-emelia, .projects-tattoo, .projects-hnanimations, .projects-orange {
+    .projects-emelia, .projects-tattoo, .projects-hnanimations, .projects-orange, .projects-guide {
       width:450px;
     }
 
