@@ -217,7 +217,7 @@ div.about-contact a:link{
     color:#98407A;
 }
 
-div.about-contact a:hover{
+div.about-contact a:hover, div.footer-contact a:hover{
     transition:all 0.3s ease-in-out;
     color:#D6AE83;
 }
@@ -442,8 +442,6 @@ div.projects-header, div.letters, footer{
 #app-no-link, #logo-no-link{
     color:#654686;
 }
-
-#app
 
 .container-card h2:hover{
     color:#D6AE83;
